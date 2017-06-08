@@ -5,7 +5,7 @@
 	the fallout games.
 */
 
-var _playSounds = false;
+var _playSounds = true;
 
 var soundBits = 
 [
