@@ -66,7 +66,7 @@ function writeToScreen(elem, msg, idx, callback){
 
 function loadWords(){
 	var rawWords = $("#wordBox").val();
-	if(!words)
+	if(!words.length)
 		words = rawWords.split('\n');
 	convertToObj();
 	$("#wordBoxWrapper").hide(100, displayBestChoice("The best choice for you to pick is:"));
