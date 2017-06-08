@@ -1,0 +1,73 @@
+html, body{
+	height: 100%;
+	overflow: hidden;
+}
+body{
+	background: black;
+	color: green;
+}
+.line{
+	font-weight: bold;
+}
+.bestChoice{
+	font-weight: bolder;
+}
+#wordBox{
+	position: fixed;
+	top: -10000px;
+	left: -10000px;
+}
+#wordBoxWrapper{
+	height: 100%;
+}
+#fakeWordBox{
+	background: #444;
+	min-height: 50%;
+	margin: 5%;
+	padding: 10px;
+}
+#feedback{
+	margin: 5%;
+	height: 60%;
+}
+#welcome{
+	height: 150px;
+}
+.bestChoice{
+	text-align: center;
+}
+.curBest{
+	font-size: 30px;
+}
+
+#num-grid{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	padding: 5%;
+}
+.btn-row{
+	display: flex;
+	justify-content: center;
+}
+.load-btn{
+	max-width: 200px;
+}
+.num-btn, .load-btn{
+	flex-grow: 1;
+	margin: 7.5px;
+	height: 50px;
+	font-size: 26px;
+	background: none;
+	border: solid 3px;
+}
+.num-btn:focus, .load-btn:focus{
+	outline: none;
+}
+.num-btn[disabled]{
+	visibility: hidden;
+}
+.btn-flash{
+	background: green;
+	color: black;
+}
